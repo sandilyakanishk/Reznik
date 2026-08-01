@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="custom-cursor"></div>
 
   <!-- NAV -->
   <nav class="nav" id="main-nav">
@@ -49,13 +52,12 @@
       <div class="phone-wrapper" id="phone-hero">
         <div class="phone-frame clay-body">
           <div class="phone-screen" id="phone-screen-hero">
-            <div class="eyes-container" id="eyes-hero">
-              <div class="eye left-eye" id="left-eye-hero">
-                <div class="eye-inner" id="left-inner-hero"></div>
+            <div class="face-container">
+              <div class="eyes-container" id="eyes-hero">
+                <div class="eye left-eye" id="left-eye-hero"></div>
+                <div class="eye right-eye" id="right-eye-hero"></div>
               </div>
-              <div class="eye right-eye" id="right-eye-hero">
-                <div class="eye-inner" id="right-inner-hero"></div>
-              </div>
+              <div class="mouth" id="mouth-hero"></div>
             </div>
             <div class="particles-container" id="particles-hero"></div>
           </div>
@@ -174,13 +176,12 @@
         </div>
         <div class="demo-phone-frame clay-body" id="demo-phone">
           <div class="demo-phone-screen" id="demo-screen">
-            <div class="demo-eyes" id="demo-eyes">
-              <div class="demo-eye left" id="demo-left-eye">
-                <div class="demo-eye-inner" id="demo-left-inner"></div>
+            <div class="demo-face" id="demo-face">
+              <div class="demo-eyes" id="demo-eyes">
+                <div class="demo-eye left" id="demo-left-eye"></div>
+                <div class="demo-eye right" id="demo-right-eye"></div>
               </div>
-              <div class="demo-eye right" id="demo-right-eye">
-                <div class="demo-eye-inner" id="demo-right-inner"></div>
-              </div>
+              <div class="demo-mouth" id="demo-mouth"></div>
             </div>
             <div class="demo-particles" id="demo-particles"></div>
             <div class="demo-sleeping" id="demo-sleeping">
@@ -219,9 +220,12 @@
         <div class="personality-phone">
           <div class="pers-phone-frame clay-body-sm">
             <div class="pers-screen">
-              <div class="pers-eyes">
-                <div class="pers-eye left" id="pers-left"></div>
-                <div class="pers-eye right" id="pers-right"></div>
+              <div class="pers-face">
+                <div class="pers-eyes">
+                  <div class="pers-eye left" id="pers-left"></div>
+                  <div class="pers-eye right" id="pers-right"></div>
+                </div>
+                <div class="pers-mouth"></div>
               </div>
             </div>
           </div>
