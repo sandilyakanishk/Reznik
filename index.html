@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reznik — Your Desktop Companion</title>
-  <meta name="description" content="Reznik is a physical-feeling AI desktop companion — an old iPhone showing expressive eyes, quietly alive on your desk. Meet Reznik." />
-  <meta name="keywords" content="Reznik, AI companion, desktop companion, local AI, voice assistant, ambient AI" />
+  <meta name="description" content="Reznik is a free, open-source AI desktop companion — runs on your machine with your own API key. An old phone, quietly alive on your desk." />
+  <meta name="keywords" content="Reznik, AI companion, open source, desktop companion, local AI, voice assistant" />
   <meta property="og:title" content="Reznik — Your Desktop Companion" />
-  <meta property="og:description" content="An AI-powered companion that listens, thinks, speaks and reacts — turning an old phone into something alive." />
+  <meta property="og:description" content="A free, open-source AI companion. Clone it, connect your key, and it is yours." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
         <a href="#what-makes" class="nav-link">About</a>
         <a href="#how-it-works" class="nav-link">How It Works</a>
         <a href="#features" class="nav-link">Features</a>
-        <a href="#demo" class="nav-link btn-nav" id="nav-cta">Wake Reznik</a>
+        <a href="https://github.com/sandilyakanishk/Reznik" class="nav-link btn-nav" id="nav-cta" target="_blank">Get Reznik</a>
       </div>
     </div>
   </nav>
@@ -35,16 +35,19 @@
       <div class="hero-eyebrow">Introducing</div>
       <h1 class="hero-title">Meet<br/><span class="accent">Reznik.</span></h1>
       <p class="hero-sub">The desktop companion that quietly lives beside you.</p>
-      <p class="hero-desc">An AI-powered companion that listens, thinks, speaks and reacts — turning an old phone into something alive.</p>
+      <p class="hero-desc">An AI companion that listens, thinks, and responds — running locally, on your machine, with your own API key.</p>
       <div class="hero-btns">
-        <button class="btn-primary" id="wake-btn-hero">Wake Reznik</button>
+        <a href="https://github.com/sandilyakanishk/Reznik" class="btn-primary" id="get-btn" target="_blank">Get Reznik</a>
         <button class="btn-secondary" id="breathe-btn">See it Breathe</button>
       </div>
+      <p class="hero-badge">
+        <span class="badge-dot"></span>
+        Free &amp; open source &mdash; clone it, connect your OpenAI or Anthropic key, and it&rsquo;s yours.
+      </p>
     </div>
     <div class="hero-right">
       <div class="phone-wrapper" id="phone-hero">
-        <div class="phone-frame">
-          <div class="phone-notch"></div>
+        <div class="phone-frame clay-body">
           <div class="phone-screen" id="phone-screen-hero">
             <div class="eyes-container" id="eyes-hero">
               <div class="eye left-eye" id="left-eye-hero">
@@ -56,12 +59,24 @@
             </div>
             <div class="particles-container" id="particles-hero"></div>
           </div>
-          <div class="phone-home-bar"></div>
         </div>
         <div class="phone-shadow"></div>
       </div>
     </div>
   </section>
+
+  <!-- INK DOODLE DIVIDER 1 -->
+  <div class="ink-divider" aria-hidden="true">
+    <svg viewBox="0 0 90 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M26 20 Q24 44 28 50 Q36 56 46 54 Q56 56 60 50 Q64 44 62 20 Z" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M62 28 Q72 30 70 40 Q70 48 62 46" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M38 14 Q40 8 38 3" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <path d="M46 16 Q48 10 46 5" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <path d="M22 54 Q44 62 66 54" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <circle cx="68" cy="48" r="3.5" fill="#F97316"/>
+      <circle cx="78" cy="28" r="2" fill="#F97316" opacity="0.5"/>
+    </svg>
+  </div>
 
   <!-- SECTION 1: WHAT MAKES REZNIK DIFFERENT -->
   <section class="section what-makes" id="what-makes">
@@ -96,7 +111,7 @@
             </svg>
           </div>
           <h3 class="card-title">Think</h3>
-          <p class="card-desc">A local AI model processes your words privately, on-device. No cloud, no data leaving your desk.</p>
+          <p class="card-desc">Your own API key, your own model. Nothing leaves your machine without your say-so.</p>
         </div>
         <div class="card" id="card-respond">
           <div class="card-illustration">
@@ -118,13 +133,24 @@
     </div>
   </section>
 
+  <!-- INK DOODLE DIVIDER 2 -->
+  <div class="ink-divider" aria-hidden="true">
+    <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30 6 L34 24 L52 30 L34 36 L30 54 L26 36 L8 30 L26 24 Z" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line x1="30" y1="1" x2="30" y2="5" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="55" y1="30" x2="59" y2="30" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="50" cy="44" r="3.5" fill="#F97316"/>
+      <circle cx="16" cy="18" r="2" fill="#F97316" opacity="0.4"/>
+    </svg>
+  </div>
+
   <!-- SECTION 2: INTERACTIVE DEMO -->
   <section class="section demo-section" id="demo">
     <div class="section-inner demo-inner">
       <div class="demo-text">
         <div class="section-tag">Interactive Demo</div>
         <h2 class="section-title">See Reznik<br/><em>wake up.</em></h2>
-        <p class="demo-desc">Press the button below and watch Reznik slowly stir to life. Move your cursor over the phone — the eyes follow.</p>
+        <p class="demo-desc">Press the button and watch Reznik slowly stir to life. Move your cursor over the device — the eyes follow. Toggle orientation to see how it adapts to your desk.</p>
         <button class="btn-primary" id="wake-btn-demo">Wake Reznik</button>
         <div class="demo-status" id="demo-status">
           <span class="status-dot" id="status-dot"></span>
@@ -132,8 +158,21 @@
         </div>
       </div>
       <div class="demo-device-wrap">
-        <div class="demo-phone-frame" id="demo-phone">
-          <div class="demo-phone-notch"></div>
+        <div class="orientation-toggle" id="orientation-toggle">
+          <button class="orient-btn active" id="btn-portrait" title="Portrait orientation">
+            <svg viewBox="0 0 16 24" fill="none" width="12" height="18">
+              <rect x="1" y="1" width="14" height="22" rx="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            Portrait
+          </button>
+          <button class="orient-btn" id="btn-landscape" title="Landscape orientation">
+            <svg viewBox="0 0 24 16" fill="none" width="18" height="12">
+              <rect x="1" y="1" width="22" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            Landscape
+          </button>
+        </div>
+        <div class="demo-phone-frame clay-body" id="demo-phone">
           <div class="demo-phone-screen" id="demo-screen">
             <div class="demo-eyes" id="demo-eyes">
               <div class="demo-eye left" id="demo-left-eye">
@@ -148,7 +187,6 @@
               <span>z</span><span>z</span><span>z</span>
             </div>
           </div>
-          <div class="demo-home-bar"></div>
         </div>
         <div class="demo-phone-shadow"></div>
         <div class="demo-glow" id="demo-glow"></div>
@@ -179,7 +217,7 @@
           <div class="bubble-tail right"></div>
         </div>
         <div class="personality-phone">
-          <div class="pers-phone-frame">
+          <div class="pers-phone-frame clay-body-sm">
             <div class="pers-screen">
               <div class="pers-eyes">
                 <div class="pers-eye left" id="pers-left"></div>
@@ -191,6 +229,15 @@
       </div>
     </div>
   </section>
+
+  <!-- INK DOODLE DIVIDER 3 -->
+  <div class="ink-divider" aria-hidden="true">
+    <svg viewBox="0 0 90 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22 40 Q14 40 14 32 Q14 24 22 24 Q24 14 34 14 Q42 9 50 16 Q58 11 64 20 Q74 20 74 30 Q74 40 64 40 Z" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="74" cy="42" r="3.5" fill="#F97316"/>
+      <circle cx="16" cy="42" r="2" fill="#F97316" opacity="0.4"/>
+    </svg>
+  </div>
 
   <!-- SECTION 4: HOW IT WORKS -->
   <section class="section how-section" id="how-it-works">
@@ -261,7 +308,7 @@
               <path d="M14 30 Q24 38 34 30" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
             </svg>
           </div>
-          <span class="step-label">Local AI</span>
+          <span class="step-label">Your API Key</span>
         </div>
         <div class="pipeline-arrow" id="arrow-4">
           <svg viewBox="0 0 60 20" fill="none">
@@ -278,7 +325,6 @@
               <ellipse cx="28" cy="22" rx="4" ry="5" fill="white"/>
               <circle cx="20" cy="23" r="2" fill="#1A1A1A"/>
               <circle cx="28" cy="23" r="2" fill="#1A1A1A"/>
-              <rect x="21" y="44" width="6" height="2" rx="1" fill="#EFE8DD" opacity="0.5"/>
               <circle cx="24" cy="36" r="2" fill="#F97316" opacity="0.6"/>
             </svg>
           </div>
@@ -294,85 +340,122 @@
       <div class="section-tag">Features</div>
       <h2 class="section-title">Everything it<br/><em>is.</em></h2>
       <div class="features-grid">
+
+        <!-- Voice — clay squircle: soundwave bars -->
         <div class="feature-card" id="feat-voice">
           <div class="feat-icon">
-            <svg viewBox="0 0 56 56" fill="none">
-              <circle cx="28" cy="28" r="26" fill="#EFE8DD"/>
-              <path d="M22 28 Q22 20 28 20 Q34 20 34 28 L34 30 Q34 36 28 36 Q22 36 22 30 Z" fill="#1A1A1A"/>
-              <path d="M18 30 Q17 38 28 42 Q39 38 38 30" stroke="#F97316" stroke-width="2" stroke-linecap="round" fill="none"/>
-              <line x1="28" y1="42" x2="28" y2="46" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
-              <path d="M23 46 L33 46" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="#EFE8DD"/>
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+              <rect x="19" y="32" width="5" height="10" rx="2.5" fill="#1A1A1A"/>
+              <rect x="27" y="24" width="5" height="26" rx="2.5" fill="#1A1A1A"/>
+              <rect x="35" y="18" width="5" height="38" rx="2.5" fill="#1A1A1A"/>
+              <rect x="43" y="24" width="5" height="26" rx="2.5" fill="#1A1A1A"/>
+              <rect x="51" y="32" width="5" height="10" rx="2.5" fill="#1A1A1A"/>
+              <circle cx="58" cy="58" r="6" fill="#F97316"/>
             </svg>
           </div>
           <h4 class="feat-title">Voice</h4>
           <p class="feat-desc">Warm, natural voice with a personality you will recognize.</p>
         </div>
+
+        <!-- Memory — clay squircle: note with folded orange corner -->
         <div class="feature-card" id="feat-memory">
           <div class="feat-icon">
-            <svg viewBox="0 0 56 56" fill="none">
-              <circle cx="28" cy="28" r="26" fill="#EFE8DD"/>
-              <ellipse cx="28" cy="32" rx="14" ry="12" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-              <ellipse cx="28" cy="24" rx="14" ry="10" fill="#F7F3ED" stroke="#1A1A1A" stroke-width="1.5"/>
-              <ellipse cx="28" cy="24" rx="8" ry="5" fill="none" stroke="#1A1A1A" stroke-width="1"/>
-              <path d="M22 28 Q25 32 28 28 Q31 32 34 28" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="#EFE8DD"/>
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+              <rect x="17" y="13" width="30" height="38" rx="4" fill="#E0D8CC"/>
+              <rect x="17" y="13" width="30" height="38" rx="4" fill="#EDE6D8"/>
+              <path d="M37 13 L47 23 L37 23 Z" fill="#F97316"/>
+              <line x1="22" y1="31" x2="38" y2="31" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="22" y1="39" x2="36" y2="39" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="58" cy="58" r="6" fill="#F97316"/>
             </svg>
           </div>
           <h4 class="feat-title">Memory</h4>
           <p class="feat-desc">Remembers your preferences, routines, and what matters.</p>
         </div>
+
+        <!-- Emotions — clay squircle: smiley face with orange cheek -->
         <div class="feature-card" id="feat-emotions">
           <div class="feat-icon">
-            <svg viewBox="0 0 56 56" fill="none">
-              <circle cx="28" cy="28" r="26" fill="#EFE8DD"/>
-              <ellipse cx="22" cy="28" rx="5" ry="6" fill="#1A1A1A"/>
-              <ellipse cx="34" cy="28" rx="5" ry="6" fill="#1A1A1A"/>
-              <path d="M20 38 Q28 44 36 38" stroke="#F97316" stroke-width="2" stroke-linecap="round" fill="none"/>
-              <path d="M17 20 Q22 16 27 20" stroke="#D8D2CA" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-              <path d="M29 20 Q34 16 39 20" stroke="#D8D2CA" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="#EFE8DD"/>
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+              <circle cx="36" cy="34" r="18" fill="#E8E0D0" stroke="#D0C8BA" stroke-width="1.5"/>
+              <path d="M24 30 Q28 25 32 30" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M40 30 Q44 25 48 30" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M28 41 Q36 48 44 41" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <circle cx="23" cy="40" r="4.5" fill="#F97316" opacity="0.65"/>
+              <circle cx="58" cy="58" r="6" fill="#F97316"/>
             </svg>
           </div>
           <h4 class="feat-title">Emotions</h4>
           <p class="feat-desc">Expressive eyes that show curiosity, calm, and delight.</p>
         </div>
+
+        <!-- Local AI — clay squircle: circuit branches -->
         <div class="feature-card" id="feat-local">
           <div class="feat-icon">
-            <svg viewBox="0 0 56 56" fill="none">
-              <circle cx="28" cy="28" r="26" fill="#EFE8DD"/>
-              <rect x="16" y="20" width="24" height="18" rx="3" fill="#1A1A1A"/>
-              <path d="M22 27 L26 31 L34 24" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="24" y="38" width="8" height="3" rx="1" fill="#1A1A1A"/>
-              <rect x="20" y="41" width="16" height="1.5" rx="0.75" fill="#D8D2CA"/>
+            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="#EFE8DD"/>
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+              <line x1="36" y1="54" x2="36" y2="34" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="36" y1="34" x2="20" y2="20" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="36" y1="34" x2="52" y2="20" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="36" y1="42" x2="50" y2="32" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="36" cy="54" r="5" fill="#F97316"/>
+              <circle cx="20" cy="20" r="4.5" fill="#1A1A1A"/>
+              <circle cx="52" cy="20" r="4.5" fill="#F97316"/>
+              <circle cx="50" cy="32" r="3.5" fill="#1A1A1A"/>
+              <circle cx="36" cy="34" r="4" fill="#1A1A1A"/>
+              <circle cx="58" cy="58" r="6" fill="#F97316"/>
             </svg>
           </div>
-          <h4 class="feat-title">Local AI</h4>
-          <p class="feat-desc">Runs entirely on your hardware — no subscription, no cloud.</p>
+          <h4 class="feat-title">Your API Key</h4>
+          <p class="feat-desc">Use OpenAI, Anthropic, or any model you trust. No lock-in.</p>
         </div>
+
+        <!-- Privacy — clay squircle: padlock -->
         <div class="feature-card" id="feat-privacy">
           <div class="feat-icon">
-            <svg viewBox="0 0 56 56" fill="none">
-              <circle cx="28" cy="28" r="26" fill="#EFE8DD"/>
-              <path d="M28 14 L40 20 L40 30 Q40 40 28 44 Q16 40 16 30 L16 20 Z" fill="#1A1A1A"/>
-              <path d="M22 28 L26 32 L34 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="#EFE8DD"/>
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+              <path d="M26 34 L26 26 Q26 14 36 14 Q46 14 46 26 L46 34" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <rect x="18" y="34" width="36" height="26" rx="7" fill="#1A1A1A"/>
+              <circle cx="36" cy="44" r="4.5" fill="#EFE8DD"/>
+              <rect x="33.5" y="44" width="5" height="8" rx="1.5" fill="#EFE8DD"/>
+              <circle cx="58" cy="58" r="6" fill="#F97316"/>
             </svg>
           </div>
           <h4 class="feat-title">Privacy</h4>
-          <p class="feat-desc">Your data never leaves your desk. Private by design.</p>
+          <p class="feat-desc">Your data stays on your desk. No servers. No subscriptions.</p>
         </div>
+
+        <!-- Desktop Companion — clay squircle: mini Reznik face -->
         <div class="feature-card" id="feat-companion">
           <div class="feat-icon">
-            <svg viewBox="0 0 56 56" fill="none">
-              <circle cx="28" cy="28" r="26" fill="#EFE8DD"/>
-              <rect x="12" y="38" width="32" height="3" rx="1.5" fill="#D8D2CA"/>
-              <rect x="21" y="22" width="14" height="20" rx="3" fill="#1A1A1A"/>
-              <ellipse cx="25" cy="32" rx="2.5" ry="3" fill="white"/>
-              <ellipse cx="31" cy="32" rx="2.5" ry="3" fill="white"/>
-              <path d="M16 32 Q17 28 16 24" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
-              <path d="M19 33 Q20 29 19 25" stroke="#F97316" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.3"/>
+            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="#EFE8DD"/>
+              <rect x="1" y="1" width="70" height="70" rx="20" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+              <rect x="10" y="14" width="52" height="36" rx="10" fill="#CAC3B5"/>
+              <rect x="14" y="18" width="44" height="28" rx="7" fill="#111"/>
+              <ellipse cx="26" cy="32" rx="6" ry="7.5" fill="white"/>
+              <ellipse cx="46" cy="32" rx="6" ry="7.5" fill="white"/>
+              <circle cx="26" cy="33" r="3.2" fill="#111"/>
+              <circle cx="46" cy="33" r="3.2" fill="#111"/>
+              <circle cx="27.5" cy="30.5" r="1.4" fill="white"/>
+              <circle cx="47.5" cy="30.5" r="1.4" fill="white"/>
+              <line x1="8" y1="55" x2="64" y2="55" stroke="#D8D2CA" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="58" cy="58" r="6" fill="#F97316"/>
             </svg>
           </div>
           <h4 class="feat-title">Desktop Companion</h4>
           <p class="feat-desc">Always there. Never intrusive. Just quietly present.</p>
         </div>
+
       </div>
     </div>
   </section>
@@ -381,28 +464,55 @@
   <footer class="footer" id="footer">
     <div class="footer-inner">
       <div class="footer-doodle" id="footer-doodle">
-        <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="30" y="20" width="60" height="44" rx="12" fill="#1A1A1A"/>
-          <path d="M44 42 Q48 38 52 42" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M68 42 Q72 38 76 42" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <text x="80" y="28" font-size="9" fill="#F97316" opacity="0.8" font-family="Georgia, serif">z</text>
-          <text x="88" y="20" font-size="7" fill="#F97316" opacity="0.5" font-family="Georgia, serif">z</text>
-          <text x="95" y="14" font-size="5" fill="#F97316" opacity="0.3" font-family="Georgia, serif">z</text>
-          <line x1="10" y1="64" x2="110" y2="64" stroke="#D8D2CA" stroke-width="1.5" stroke-linecap="round"/>
-          <ellipse cx="60" cy="68" rx="30" ry="3" fill="#D8D2CA" opacity="0.4"/>
+        <svg viewBox="0 0 140 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- clay body sleeping -->
+          <rect x="20" y="18" width="80" height="56" rx="16" fill="#2a2a2a"/>
+          <rect x="24" y="22" width="72" height="48" rx="12" fill="#111"/>
+          <!-- sleeping arc eyes -->
+          <path d="M40 46 Q48 38 56 46" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M68 46 Q76 38 84 46" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <!-- zzz -->
+          <text x="96" y="30" font-size="11" fill="#F97316" opacity="0.85" font-family="Georgia, serif">z</text>
+          <text x="106" y="20" font-size="8" fill="#F97316" opacity="0.5" font-family="Georgia, serif">z</text>
+          <text x="114" y="13" font-size="6" fill="#F97316" opacity="0.3" font-family="Georgia, serif">z</text>
+          <!-- moon -->
+          <path d="M112 50 Q118 44 118 38 Q112 38 108 44 Q104 50 108 54 Q112 56 118 52 Q118 52 112 50Z" fill="#D5CEBF" opacity="0.7"/>
+          <!-- desk line -->
+          <line x1="6" y1="76" x2="134" y2="76" stroke="#3a3a3a" stroke-width="2" stroke-linecap="round"/>
+          <!-- shadow -->
+          <ellipse cx="60" cy="80" rx="38" ry="4" fill="#2a2a2a" opacity="0.5"/>
+          <!-- orange dot -->
+          <circle cx="108" cy="70" r="4" fill="#F97316" opacity="0.6"/>
         </svg>
       </div>
       <p class="footer-tagline">Built with curiosity.</p>
+      <p class="footer-sub">Free. Open source. Yours to keep.</p>
       <p class="footer-copy">2025 Reznik</p>
       <div class="footer-links">
-        <a href="#" class="footer-link">Privacy</a>
-        <span class="footer-sep">·</span>
         <a href="https://github.com/sandilyakanishk/Reznik" class="footer-link" target="_blank">GitHub</a>
+        <span class="footer-sep">·</span>
+        <a href="https://github.com/sandilyakanishk/Reznik/blob/main/README.md" class="footer-link" target="_blank">Install</a>
         <span class="footer-sep">·</span>
         <a href="#" class="footer-link">Contact</a>
       </div>
     </div>
   </footer>
+
+  <!-- SLEEPING REZNIK EASTER EGG (fixed bottom-right) -->
+  <div class="sleeping-egg" id="sleeping-egg" role="button" tabindex="0" aria-label="Tap to wake Reznik">
+    <div class="egg-device">
+      <div class="egg-screen">
+        <svg viewBox="0 0 56 26" fill="none" width="56" height="26" class="egg-eye-svg">
+          <path d="M5 13 Q11 5 17 13" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M35 13 Q41 5 47 13" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+    </div>
+    <div class="egg-zzz" aria-hidden="true">
+      <span>z</span><span>z</span><span>z</span>
+    </div>
+    <div class="egg-tooltip">tap to wake</div>
+  </div>
 
   <script src="main.js"></script>
 </body>
