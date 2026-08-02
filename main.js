@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+
   /* ==========================================
      1. CUSTOM SMART CURSOR & HOVER
      ========================================== */
